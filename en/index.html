@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SliTaz GNU/Linux (en)</title>
+	<meta name="description" content="SliTaz GNU/Linux English Website">
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM">
+	<meta name="author" content="Paul Issot">
+	<meta name="robots" content="index, follow, all">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../slitaz.css">
+	<link rel="stylesheet" href="../slitaz-tiny.css">
+	<link rel="alternate" type="application/rss+xml" title="SliTaz Feed" href="/rss.xml">
+	<link rel="payment" href="https://flattr.com/profile/slitaz" type="text/html" title="SliTaz association microdonations">
+	<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+	<div id="network">
+		<span>Home</span>
+		<a href="http://scn.slitaz.org/?blog">Blog</a>
+		<a href="/en/doc">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://irc.slitaz.org/">IRC</a>
+		<a href="http://pro.slitaz.org/">Pro</a>
+		<a href="http://shop.slitaz.org/">Shop</a>
+		<a href="http://bugs.slitaz.org">Bugs</a>
+		<a href="http://hg.slitaz.org/?sort=lastchange">Hg</a>
+	</div>
+	<h1><a href="/en/">SliTaz GNU/Linux</a></h1>
+</div>
+
+<!-- Navigation menu -->
+<nav id="nav" role="navigation" tabindex="0">
+	<ul>
+		<li><a class="nav2" href="/en/news/">News</a></li>
+		<li><a class="nav1" href="/en/about/">About</a></li>
+		<li><a class="nav2" href="/en/get/">Download</a></li>
+		<li><a class="nav1" href="/en/support.php">Support</a></li>
+		<li><a class="nav2" href="/en/asso/">Asso</a></li>
+		<li><a class="nav1" href="/en/devel/">Development</a></li>
+		<li><a class="nav1 mobile" href=".">SliTaz.Org</a></li>
+	</ul>
+	<p>
+		Simple, fast and low resource Linux OS for servers &amp; desktops
+	</p>
+</nav>
+
+<div id="searchbtn"><a href="/en/search.php"><img src="/images/search.png" alt="Search" /></a></div>
+
+
+<!-- Content -->
+<section id="content">
+
+<h2>Welcome to SliTaz</h2>
+
+<p>SliTaz is a secure and high performance operating system using the Linux Kernel and GNU software.</p>
+
+<!--<div class="box-up">
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+		title="Visit this page now."><img src="../images/gofundme.png"></a>
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
+		Check out our new SliTaz 2014 fundraising!</a>
+</div>-->
+
+<!-- Featured sponsor -->
+<div id="sponsor">
+	<p><strong>Featured sponsor</strong></p>
+	<!-- ?php include("../lib/rand-sponsor.php"); ? -->
+	<p><a href="/en/sponsor/">Become a sponsor</a></p>
+</div>
+
+
+<!-- SliTaz news starting -->
+
+<!-- We just keep the last 3 web site news -->
+<div class="news" style="margin-right: 220px;">
+
+<h2>Latest Release</h2>
+
+<ul>
+	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)
+		<span>- <!-- ?php
+		$rol_date_file = '../cache/rolling-date.txt';
+		if (file_exists("$rol_date_file")) {
+			$rol_date = file_get_contents("../cache/rolling-date.txt");
+			print $rol_date;
+		} ? --></span></li>
+	<li><strong><!-- <a href="news/#d20180316"></a> 
+		Link to a SCN blog post or announce on website ?-->
+	
+	SliTaz is now a rolling distro with 2 branches</strong> We provide a stable version and a cooking (development) version. Stable will get small refinements and security updates. As usual the Cooking version brings you the latest improvements made by SliTaz developers.
+
+		<span>- 16 March 2018</span></li>
+	<li><strong><a href="news/">Website news archives</a></strong>
+		<span>- from 2007 to 2018</span></li>
+</ul>
+
+<!-- End of news -->
+</div>
+
+<h2>Quick Download</h2>
+
+<div class="box-warning"><p>Before using SliTaz — please read this post: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></p></div>
+
+<div class="dldiv">
+	<p><!-- ?php echo "<a class='dlbutton nav2' href='$stable_iso'>SliTaz $stable_ver</a>"; ? -->
+	<!-- a class='dlbutton nav2' href='$cooking_iso'>SliTaz $cooking</a>"; ? -->
+	<a class='dlbutton navpi' href='http://arm.slitaz.org/rpi/'>SliTaz Raspberry Pi</a>
+	<a class='dlbutton nav2' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso'>SliTaz weekly 32bits</a>
+	<a class='dlbutton nav1' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso'>SliTaz weekly 64bits</a></p>
+</div>
+
+<h2>Project Activity</h2>
+
+<?php require_once("../lib/get-feeds.php"); ?>
+
+<div class="activity">
+	<p>
+		<a href="http://forum.slitaz.org/"><img src="/images/support.png" alt="[ ]" /></a>
+		Forum activity
+		<?php get_feed_forum("forum.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://forum.slitaz.org/">More support</a>
+	</p>
+</div>
+
+<div class="activity">
+	<p>
+		<a href="http://hg.slitaz.org/">
+			<img src="/images/development.png" alt="[ ]" /></a>
+		Latest commits in wok
+		<?php get_feed("wok.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/?sort=lastchange">More commits</a>
+	</p>
+</div>
+
+<!-- SCN blog posts  
+<h2>Blog Posts</h2>
+
+<div class="news">
+	<?php //get_feed_blog("blog.xml"); ?>
+</div>-->
+
+<!-- Twitter  -->
+<div id="twitter">
+<a class="twitter-timeline"  href="https://twitter.com/slitaz"  
+	data-widget-id="420830244551938048">Tweets by @slitaz</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+
+<h2>Support us</h2>
+
+<p>Make SliTaz even more popular or make a donation. You can use PayPal or cryptocurrency to monetary support us. You can Blog, Tweet, share and talk about the project to help spread SliTaz. You can also join the project to connect and share or get involved on the SliTaz <a href="http://scn.slitaz.org/">Community Network</a>.</p>
+
+<p>You may also want to become an official sponsor via a monthly donation or by providing us with some hardware or server resources. <a href="sponsor/">More information</a></p>
+
+<!-- ?php include("../lib/html/donate.html"); ? -->
+
+
+<h2>Spread SliTaz</h2>
+
+<p>One way to help the project is to make SliTaz even more popular. Blog, Tweet this page, share and talk about the project. SliTaz is also social, you can join us, share artwork or post a blog on the <a href="http://scn.slitaz.org/">SliTaz Community Network</a>, "Like" the official SliTaz Facebook page and get involved!</p>
+
+<!-- ?php include("../lib/html/social.html"); ? -->
+
+
+<h2>Internationalization</h2>
+
+<p>The SliTaz web site is available in several languages and maintained by the <a href="/i18n.php">internationalization</a> team (i18n). Help is often needed and you're welcome to join us if you would like to see the website translated into your language.</p>
+
+
+<h2>Artwork</h2>
+
+<p>You can get SliTaz logos, screenshots and wallpapers and get involved in the SliTaz Artwork team to help with default artwork provided with the distribution ISO images. More information in <a href="artwork/">the Artwork section</a>.</p>
+
+<!-- End of content  -->
+</section>
+
+<!-- Footer -->
+
+<script type="text/javascript">
+	function QRCodePNG(str, obj) {
+		try {
+			obj.height = obj.width += 300;
+			return QRCode.generatePNG(str, {ecclevel: 'H'});
+		}
+		catch (any) {
+			var element = document.createElement("script");
+			element.src = "/lib/js/qrcode.js";
+			element.type ="text/javascript";
+			element.onload = function() {
+				obj.src = QRCode.generatePNG(str, {ecclevel: 'H'});
+			};
+			document.body.appendChild(element);
+		}
+	}	
+</script>
+
+<div id="footer">
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://bugs.slitaz.org">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		<img src="/images/qr.png" alt="SliTaz @" onmouseover="this.title = location.href"
+		 onclick="this.src = QRCodePNG(location.href, this)" />
+		<a href="https://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/table.php?distribution=slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="https://flattr.com/profile/slitaz">Flattr</a>
+	</p>
+</div>
+
+</body>
+</html>
